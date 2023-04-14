@@ -24,4 +24,7 @@
 
 body {
     color: rgb(var(--foreground-rgb));
+    background-image: url('../public/img/background3.png');
+    background-size: cover;
+    background-position: center;
 }
