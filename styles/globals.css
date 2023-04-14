@@ -24,7 +24,7 @@
 
 body {
     color: rgb(var(--foreground-rgb));
-    background-image: url('../public/img/background3_optimised.png');
+    /* background-image: url('../public/img/background3_optimised.png');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }

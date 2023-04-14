@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import InputField from '@/components/InputField'
 import Chat from '@/components/Chat'
+import background from '../public/img/background3.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,9 @@ export default function Home() {
 
     return (
         <section className={`max-w-7xl mx-auto`}>
+            <div className="background w-screen h-screen absolute top-0 left-0 right-0 bottom-0 -z-10">
+                <Image src={background} alt="" className='h-full w-full'/>
+            </div>
             <Navbar />
             <section className='h-[calc(100vh-100px)] p-5 sm:pb-10'>
                 <div className="h-full bg-primary bg-opacity-30 border border-white rounded-[40px] p-5 sm:pb-10 flex flex-col justify-end items-center">
