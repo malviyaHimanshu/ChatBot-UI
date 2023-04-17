@@ -2,16 +2,16 @@ import { useState } from "react";
 import sendIcon from '../public/icons/sendicon.png';
 import Image from "next/image";
 
-const InputField = () => {
+const InputField = ({ getInputValue }: any) => {
     const [inputValue, setInputValue] = useState<string>('');
-
+    
     const handleChange = (e: any) => {
         setInputValue(e.target.value);
     }
-
-    const handleSubmit = (e: any) => {
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
-        console.log(inputValue);
+        getInputValue(inputValue);
+        setInputValue('');
     }
 
     return (
@@ -34,5 +34,5 @@ const InputField = () => {
         </div>
     );
 }
- 
+
 export default InputField;

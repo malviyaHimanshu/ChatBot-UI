@@ -28,3 +28,10 @@ body {
     background-size: cover;
     background-position: center; */
 }
+
+.chatscroll::-webkit-scrollbar {
+  width: 0;
+}
+.chatscroll {
+  scrollbar-width: none;
+}
